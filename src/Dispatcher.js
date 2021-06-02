@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const COMPILE_ENDPOINT = "https://ppclang.herokuapp.com//compileFile"
-const RUN_ENDPOINT = "https://ppclang.herokuapp.com//runFile"
+const COMPILE_ENDPOINT = "http://127.0.0.1:5000/compileFile"
+const RUN_ENDPOINT = "http://127.0.0.1:5000/runFile"
 
 class PPC {
     compile = async(input) => {

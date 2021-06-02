@@ -38,6 +38,7 @@ const App = () => {
     dispatcher.run(compileOutput).then((result) => {
       console.log({ result })
       const { data } = result
+      setCompileOutput('')
       setResult(data.result)
     }).catch((e) => {
       console.log({ e })
@@ -69,6 +70,7 @@ const App = () => {
           <div style={{padding: 10}}>
             <Heading>Editor Plus Plus C</Heading>
             <Buttons 
+              canRun={compileOutput !== ''}
               onCompile={onCompile}
               onRun={onRun}
               onClean={onClean}

@@ -187,7 +187,7 @@ main () {
     var fib int;
 
     fib = fibonacci(i);
-    print(fib1);
+    print(fib);
 }
 
 `

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Heading } from "@chakra-ui/react"
 
 const Output = (props) => {
     const { value } = props
@@ -10,7 +11,7 @@ const Output = (props) => {
             flexDirection: 'column',
             height: '1000px'
         }}>
-            <h1>Resultado</h1>
+            <Heading>Resultado</Heading>
             <textarea style={{flex: 1}} value={value} />
         </div>
     )
